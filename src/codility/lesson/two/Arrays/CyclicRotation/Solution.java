@@ -1,4 +1,4 @@
-package codility.lesson.two.CyclicRotation;
+package codility.lesson.two.Arrays.CyclicRotation;
 
 public class Solution {
 
