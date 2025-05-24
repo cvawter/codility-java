@@ -1,4 +1,4 @@
-package codility.lesson.one.iterations;
+package codility.lesson.one.Iterations;
 
 public class Solution {
     
