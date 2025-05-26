@@ -18,6 +18,7 @@ public class Solution {
             {1, 2, 3, 5},
             IntStream.range(1, 1000).toArray(), // {1, 2, 3, ..., 999}
             IntStream.range(1, 100000).toArray(), // {1, 2, 3, ..., 99999}
+            IntStream.range(1, 191068).toArray(), // {1, 2, 3, ..., 191067}
             IntStream.range(1, 191069).toArray(), // {1, 2, 3, ..., 191068}
             IntStream.range(1, 1000000).toArray() // {1, 2, 3, ..., 999999}
         };
@@ -45,10 +46,7 @@ public class Solution {
         else if (A.length == 1) { return A[0] == 1 ? 2 : 1; } // If the array has one element, return the next number or 1 if it's not present
         else {
             long expectedSum = (n + 1) * (n + 2) / 2; // Sum of first n+1 natural numbers (if the array was complete)
-            System.out.println("Expected sum: " + expectedSum);
             long actualSum = java.util.Arrays.stream(A).sum(); // Sum of elements in the array
-            System.out.println("Actual sum: " + actualSum);
-            System.out.println("Difference: " + (expectedSum - actualSum));
             missingElement = expectedSum - actualSum; // The missing element is the difference between expected and actual sum
         }
         return missingElement > Integer.MAX_VALUE ? -1 : (int) missingElement; // If the missing element exceeds Integer.MAX_VALUE, return -1
