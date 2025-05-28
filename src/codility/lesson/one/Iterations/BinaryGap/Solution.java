@@ -1,4 +1,4 @@
-package codility.lesson.one.Iterations;
+package codility.lesson.one.Iterations.BinaryGap;
 
 public class Solution {
     
