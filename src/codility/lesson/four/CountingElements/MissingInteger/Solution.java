@@ -1,4 +1,4 @@
-package codility.lesson.four.MissingInteger;
+package codility.lesson.four.CountingElements.MissingInteger;
 
 import java.util.Arrays;
 
