@@ -12,8 +12,8 @@ public class Solution {
             {1, 2, 3, 4},    // All distinct elements
             {5, 5, 5, 5},    // All elements are the same
             {1, 2, 2, 3},    // One duplicate element
-            {},               // Empty array
-            {7}               // Single element array
+            {},              // Empty array
+            {7}              // Single element array
         };
         
         for (int[] testCase : testCases) {
