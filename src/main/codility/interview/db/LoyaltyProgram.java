@@ -117,7 +117,7 @@ public class LoyaltyProgram {
         List<LogEntry> logEntries2 = new ArrayList<>();
 
            try (InputStream s1 = LoyaltyProgram.class.getResourceAsStream("./log_day1.csv");
-               InputStream s2 = LoyaltyProgram.class.getResourceAsStream("log_day2.csv")) {
+               InputStream s2 = LoyaltyProgram.class.getResourceAsStream("./log_day2.csv")) {
 
             if (s1 == null) {
                 System.err.println("Missing resource: /log_day1.csv");
