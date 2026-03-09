@@ -8,27 +8,16 @@ Java solutions for [Codility](https://app.codility.com/programmers/) developer t
 
 ## Running Code
 
-There is no build tool (Maven/Gradle). This is a plain Java project intended to be run directly via an IDE (e.g., IntelliJ IDEA) or `javac`/`java` from the command line.
-
-To compile and run a solution from the project root:
-
 ```bash
-# Compile (output .class files to out/ directory)
-javac -d out -sourcepath src/main src/main/codility/lesson/one/Iterations/BinaryGap/Solution.java
+# Build all solutions
+./gradlew build
 
-# Run (use the package path as the class name)
-java -cp out main.codility.lesson.one.Iterations.BinaryGap.Solution
+# Run a specific solution (defaults to BinaryGap if omitted)
+./gradlew run -PmainClass=main.codility.lesson.one.Iterations.BinaryGap.Solution
+./gradlew run -PmainClass=main.codility.interview.db.LoyaltyProgram
 ```
 
-Each `Solution.java` has a `main()` method with inline test cases — no external test framework is used.
-
-For the `LoyaltyProgram` interview problem, the CSV data files (`log_day1.csv`, `log_day2.csv`) must be on the classpath alongside the class files (they are loaded via `getResourceAsStream`):
-
-```bash
-javac -d out -sourcepath src/main src/main/codility/interview/db/LoyaltyProgram.java
-cp src/main/codility/interview/db/*.csv out/main/codility/interview/db/
-java -cp out main.codility.interview.db.LoyaltyProgram
-```
+Each `Solution.java` has a `main()` method with inline test cases — no external test framework is used. The CSV files for `LoyaltyProgram` are loaded via `getResourceAsStream` and are included automatically by the Gradle `resources` source set.
 
 ## Code Structure
 
