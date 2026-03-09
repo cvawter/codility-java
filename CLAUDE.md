@@ -23,6 +23,7 @@ java -cp out main.codility.lesson.one.Iterations.BinaryGap.Solution
 Each `Solution.java` has a `main()` method with inline test cases — no external test framework is used.
 
 For the `LoyaltyProgram` interview problem, the CSV data files (`log_day1.csv`, `log_day2.csv`) must be on the classpath alongside the class files (they are loaded via `getResourceAsStream`):
+
 ```bash
 javac -d out -sourcepath src/main src/main/codility/interview/db/LoyaltyProgram.java
 cp src/main/codility/interview/db/*.csv out/main/codility/interview/db/
