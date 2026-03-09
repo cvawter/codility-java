@@ -11,6 +11,7 @@ Java solutions for [Codility](https://app.codility.com/programmers/) developer t
 There is no build tool (Maven/Gradle). This is a plain Java project intended to be run directly via an IDE (e.g., IntelliJ IDEA) or `javac`/`java` from the command line.
 
 To compile and run a solution from the project root:
+
 ```bash
 # Compile (output .class files to out/ directory)
 javac -d out -sourcepath src/main src/main/codility/lesson/one/Iterations/BinaryGap/Solution.java
