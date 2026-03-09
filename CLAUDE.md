@@ -32,6 +32,17 @@ java -cp out main.codility.interview.db.LoyaltyProgram
 
 ## Code Structure
 
+```text
+src/main/codility/
+├── lesson/
+│   ├── one/Iterations/BinaryGap/        # Lesson 1
+│   ├── two/Arrays/                      # Lesson 2: CyclicRotation, OddOccurrencesInArray
+│   ├── three/TimeComplexity/            # Lesson 3: FrogJmp, PermMissingElem, TapeEquilibrium
+│   ├── four/CountingElements/           # Lesson 4: MissingInteger, MaxCounters
+│   ├── five/PrefixSums/CountDiv/        # Lesson 5
+│   └── six/Sorting/Distinct/            # Lesson 6
+└── interview/db/                        # Interview prep: LoyaltyProgram (HashMap/Set problem)
+```
 ```
 src/main/codility/
 ├── lesson/
