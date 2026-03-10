@@ -119,12 +119,10 @@ public class LoyaltyProgram {
                InputStream s2 = LoyaltyProgram.class.getResourceAsStream("/log_day2.csv")) {
 
             if (s1 == null) {
-                System.err.println("Missing resource: /log_day1.csv");
-                return;
+                throw new RuntimeException("Missing required resource: /log_day1.csv");
             }
             if (s2 == null) {
-                System.err.println("Missing resource: /log_day2.csv");
-                return;
+                throw new RuntimeException("Missing required resource: /log_day2.csv");
             }
 
             logEntries1 = parseLogStream(s1);
